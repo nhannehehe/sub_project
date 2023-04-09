@@ -63,3 +63,30 @@ img {
     padding: 0 10px;
     cursor: pointer;
 }
+
+.header {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-auth {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    text-transform: capitalize;
+  }
+  .header-signin {
+    font-weight: 500;
+    color: #0b132a;
+  }
+  .header-signup {
+    padding: 13px 45px;
+    border-radius: 100rem;
+    color: #f53838;
+    border: 1px solid;
+    font-weight: 500;
+  }
