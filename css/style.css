@@ -622,3 +622,130 @@ h6 {
         margin-bottom: 30px;
     }
 }
+
+.customer-list {
+    display: flex;
+}
+
+.customer .boxed {
+    margin-bottom: 60px;
+}
+
+.customer .heading {
+    max-width: 447px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customer-item {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 25px;
+}
+
+.customer-item.slick-current.slick-active {
+    border-color: #f53838;
+}
+
+.customer-top {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.customer-avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.customer-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100rem;
+}
+
+.customer-name,
+.customer-address {
+    line-height: 1;
+}
+
+.customer-rating {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.customer .slick-track {
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.customer .slick-arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 100rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    z-index: 10;
+}
+
+.customer .slick-prev {
+    border: 1px solid #f53838;
+    background-color: transparent;
+    right: 80px;
+}
+
+.customer .slick-next {
+    background-color: #f53838;
+    right: 0;
+}
+
+.customer .slick-dots {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    transform: translateY(50%);
+}
+
+.customer .slick-dots button {
+    font-size: 0;
+    background-color: #dde0e4;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    transition: all 0.2s linear;
+}
+
+.customer .slick-dots .slick-active button {
+    background-color: #f53838;
+    width: 45px;
+}
+
+@media screen and (max-width: 1023px) {
+    .customer .slick-track {
+        padding-bottom: 20px;
+    }
+
+    .customer .slick-dots {
+        justify-content: center;
+    }
+
+    .customer-list {
+        padding-bottom: 50px;
+    }
+
+}
