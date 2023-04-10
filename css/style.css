@@ -377,8 +377,9 @@ h6 {
 
 .intro {
     margin-bottom: 95px;
-  }
-  .intro-container {
+}
+
+.intro-container {
     background: #ffffff;
     border-radius: 10px;
     padding: 37px 0;
@@ -386,43 +387,96 @@ h6 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     min-height: 200px;
-  }
-  .intro-item {
+}
+
+.intro-item {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0 36.5px;
     font-size: 20px;
-  }
-  .intro-title {
+}
+
+.intro-title {
     font-size: 25px;
     margin-bottom: 5px;
     line-height: calc(30 / 25);
-  }
-  .intro-text {
+}
+
+.intro-text {
     line-height: calc(30 / 20);
-  }
-  
-  @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
     .intro-item:nth-child(2) {
-      border-left: 2px solid #eeeff2;
-      border-right: 2px solid #eeeff2;
+        border-left: 2px solid #eeeff2;
+        border-right: 2px solid #eeeff2;
     }
-  }
-  @media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 767px) {
     .intro {
-      margin-bottom: 50px;
+        margin-bottom: 50px;
     }
-  
+
     .intro-container {
-      grid-template-columns: 100%;
-      padding: 30px;
-      grid-gap: 50px 0;
+        grid-template-columns: 100%;
+        padding: 30px;
+        grid-gap: 50px 0;
     }
-  
+
     .intro-item {
-      flex-direction: column;
-      gap: 20px 0;
-      text-align: center;
+        flex-direction: column;
+        gap: 20px 0;
+        text-align: center;
     }
-  }
+}
+
+.feature {
+    padding-bottom: 130px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 0 170px;
+}
+
+.feature-desc {
+    margin-bottom: 23px;
+}
+
+.feature-list {
+    list-style-type: none;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 21px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1023px) {
+    .feature-container {
+        gap: 0 30px;
+        align-items: center;
+    }
+
+    .feature {
+        padding-bottom: 95px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .feature {
+        padding-bottom: 50px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        gap: 50px 0;
+    }
+}
