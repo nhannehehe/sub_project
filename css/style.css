@@ -841,3 +841,100 @@ h6 {
         grid-gap: 30px 0;
     }
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-content {
+    background: #fff;
+    width: 900px;
+    position: relative;
+    top: -21px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    animation: modalFaceIn ease 0.5s;
+}
+
+.modal-content .modal-heading {
+    padding: 32px 16px;
+    background-color: #f53838;
+}
+
+.modal-heading .btn {
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.modal-heading .btn:hover {
+    color: #000;
+}
+
+.modal-heading h2 {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.modal-heading .modal-heading-icon {
+    margin-right: 16px;
+}
+
+.modal-container {
+    padding: 0.150px 16px;
+}
+
+.modal-container p {
+    margin: 15px 0px;
+}
+
+.modal-container input {
+    padding: 8px;
+    width: 100%;
+    display: block;
+}
+
+.modal-btn {
+    font-size: 24px;
+    width: 100%;
+    padding: 16px;
+    background-color: #f53838;
+    color: #fff;
+    margin: 16px 0;
+}
+
+.modal-content button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+@keyframes modalFaceIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
