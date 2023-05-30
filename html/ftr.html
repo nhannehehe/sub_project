@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<style>
+    body{
+    background: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+.box-container{
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    background-color: #f00;
+   
+}
+
+.box-container:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -4px;
+    right: -4px;
+    top:-4px;
+    bottom: -4px;
+   background: linear-gradient(to right, #f00, #080088);
+   transform: skew(1.5deg, 1.5deg);
+}
+
+.box-item{
+    background-color: #002;
+    padding: 30px;
+    width: 100%;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-content{
+    color:#fff;
+    position: relative;
+}
+
+.box-content h3{
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+.box-content p{
+    font-size: 18px;
+    line-height: 1.75;
+    margin: 0 0 20px;
+}
+
+.box-content a{
+    display: table;
+    margin: 20px 0 0;
+    text-decoration: none;
+    border:1px solid #fff;
+    padding:8px 32px;
+    color:#fff;
+}
+.box-item:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(255,255,255,.05);
+    left:0;
+    top:0;
+    width: 50%;
+    height: 100%;
+}
+</style>
+<body>
+    
+
+    <div class="box-container">
+        <div class="box-item">
+            <div class="box-content">
+                <h3>Thank You !</h3>
+                <p>We will improve the product more to bring the best experience for everyone.</p>
+                <a href="#" class="box-btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
